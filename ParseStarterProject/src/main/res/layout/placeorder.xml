@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+    <ScrollView
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="#000"
+                    android:text="SELECT PAYMENT OPTIONS"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:background="#FFF"
+                android:layout_marginTop="15dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:id="@+id/myRadioGroup"
+                android:background="#a3a69e"
+                android:checkedButton="@+id/cash" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pay"
+                    android:text="ANDROID PAY" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/credit"
+                    android:text="CREDIT CARD" />
+
+                <RadioButton
+                    android:id="@+id/debit"
+                    android:text="DEBIT CARD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/cash"
+                    android:text="CASH ON DELEIVERY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </RadioButton>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/buy"
+                android:drawableRight="@android:drawable/ic_menu_send"
+                android:background="@drawable/selector_button_red"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Proceed"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

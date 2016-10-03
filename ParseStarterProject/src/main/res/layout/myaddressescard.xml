@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="310dp"
+    card_view:cardCornerRadius="5dp"
+    android:onClick="addressCardClicked">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Addresses"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="19sp"
+                android:textColor="@color/row_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap this section to view your saved adderesses"
+                android:maxLines="2"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

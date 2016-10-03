@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<resources>
+    <string name="parse_app_id">VROtiirgwdGCcnTBFyBGo9zrXrsV9yKMR20Y1Ytw</string>
+    <string name="parse_client_key">BJgkIf2BOlBbqhDoIuJUSU8e5LYC6b1D2nDwX0rd</string>
+
+    <string name="app_name">Parse Starter Project</string>
+
+    <string name="hello_world">Hello World!</string>
+    <string name="action_settings">Settings</string>
+    <string name="createone"><u>Create One</u></string>
+    <string name="loginhere"><u>Login Here</u></string>
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimary"
+       app:popupTheme="@style/AppTheme"
+       app:layout_scrollFlags="scroll|enterAlways">
+   </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:text="DELIVERY ADDRESS DETAILS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <!--    <TextView
+            android:layout_marginLeft="160dp"
+            android:onClick="changeAddress"
+            android:textColor="@color/blue"
+            android:text="Change"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/gray_bg"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <!--  <TextView
+
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="#000"
+            android:text="Bageshwar Nagar beside Bawali Mod behind Heart Hygeine Hospital Azamgarh 276001"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="@color/row_grey"
+            android:text="Ashish Yadav "
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/row_grey"
+            android:text="9650096148"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />-->
+        <android.support.design.widget.TextInputLayout
+
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/name">
+        <EditText
+            android:textColor="#000"
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="6"
+                android:inputType="number"
+                android:hint="Pincode" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Landmark" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/input_phone"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:maxLength="10"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="ITEM DETAILS AND DATE"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:background="#FFF"
+        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="#000"
+            android:text="Item : Donut Fresh"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:layout_margin="10dp"
+            android:textColor="@color/row_grey"
+            android:text="Quantity : 1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/row_grey"
+            android:text="Price : Rs.80"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/itemDiscount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/row_grey"
+            android:text="Discount : Yes 20 % OFF"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_margin="10dp"
+                android:maxLines="2"
+                android:textColor="#000"
+                android:text="Note : Check your items carefully this is the final step."
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/proceed"
+                android:drawableRight="@android:drawable/ic_menu_send"
+                android:background="@drawable/selector_button_red"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Place It"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

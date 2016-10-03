@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/relative">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_below="@+id/relative"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways" />
+    <LinearLayout
+        android:background="#000"
+        android:weightSum="2"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/fav"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:background="@drawable/selector_button"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"/>
+        <Button
+            android:id="@+id/buyNow"
+            android:drawableRight="@android:drawable/ic_media_ff"
+            android:background="@drawable/selector_button_red"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="BUY NOW"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_above="@+id/buttons"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_weight="80"
+                android:id="@+id/itemtitle"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:layout_weight="20"
+                android:id="@+id/favorite_nice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:mfb_rotation_duration="400"
+                app:mfb_rotation_angle="216"
+                app:mfb_bounce_duration="700" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/itemimage"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/itemimagebutton1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <ImageButton
+                    android:id="@+id/itemimagebutton2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <ImageButton
+                    android:id="@+id/itemimagebutton3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <ImageButton
+                    android:id="@+id/itemimagebutton4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/itemoldprice"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/itemnewprice"
+                android:textStyle="bold"
+                android:layout_margin="7dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/itemdiscount"
+                android:textStyle="bold"
+                android:layout_margin="7dp"
+                android:textSize="18sp"
+                android:textColor="#ff8000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Special Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/itemstock"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="#5ee20c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Description : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/itemdesc"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

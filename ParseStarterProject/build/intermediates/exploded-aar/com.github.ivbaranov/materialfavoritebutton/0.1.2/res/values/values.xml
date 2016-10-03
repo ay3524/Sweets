@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialFavoriteButton"><attr format="boolean" name="mfb_animate_favorite"/><attr format="boolean" name="mfb_animate_unfavorite"/><attr format="integer" name="mfb_padding"/><attr format="integer" name="mfb_favorite_image"/><attr format="integer" name="mfb_not_favorite_image"/><attr format="integer" name="mfb_rotation_duration"/><attr format="integer" name="mfb_rotation_angle"/><attr format="integer" name="mfb_bounce_duration"/><attr format="enum" name="mfb_color"><enum name="black" value="0"/><enum name="white" value="1"/></attr><attr format="enum" name="mfb_type"><enum name="star" value="0"/><enum name="heart" value="1"/></attr></declare-styleable>
+    <!-- From: file:/Users/ivbaranov/Projects/Android/MaterialFavoriteButtonGH/materialfavoritebutton/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">MaterialFavoriteButton</string>
+</resources>

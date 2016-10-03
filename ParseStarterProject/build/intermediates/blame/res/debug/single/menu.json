@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\menu\\edit_account.xml",
+        "source": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\src\\main\\res\\menu\\edit_account.xml"
+    },
+    {
+        "merged": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\menu\\drawer_view.xml",
+        "source": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\src\\main\\res\\menu\\drawer_view.xml"
+    },
+    {
+        "merged": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "F:\\Exercise Files\\Sweets\\ParseStarterProject\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]

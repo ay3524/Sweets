@@ -1,5 +1,6 @@
 # Sweets
 
+![All Sreen GIF](https://raw.github.com/cloud143/Sweets/master/1ccunt.gif)<br>
 ![First Screen](https://raw.github.com/cloud143/Sweets/master/device-2016-10-09-192139.png)
 ![Create Account Screen](https://raw.github.com/cloud143/Sweets/master/device-2016-10-09-192213.png)
 ![Login Screen](https://raw.github.com/cloud143/Sweets/master/device-2016-10-09-192233.png)
